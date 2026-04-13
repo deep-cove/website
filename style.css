@@ -1,0 +1,160 @@
+/* ── Reset & base ─────────────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: Georgia, 'Times New Roman', serif;
+  color: #2c2c2c;
+  background: #faf8f5;
+  line-height: 1.7;
+}
+
+/* ── Header ───────────────────────────────────────────────────── */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: #1a3a2a;
+  color: #f0ebe0;
+  padding: 0 2rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+}
+
+.header-inner {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 64px;
+}
+
+header h1 {
+  font-size: 1.4rem;
+  font-weight: normal;
+  letter-spacing: 0.05em;
+}
+
+nav a {
+  color: #c8b98a;
+  text-decoration: none;
+  margin-left: 2rem;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 0.9rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  transition: color 0.2s;
+}
+
+nav a:hover { color: #f0ebe0; }
+
+/* ── Hero ─────────────────────────────────────────────────────── */
+#hero {
+  background: linear-gradient(135deg, #1a3a2a 0%, #2d5a3d 60%, #4a7c5e 100%);
+  color: #f0ebe0;
+  text-align: center;
+  padding: 6rem 2rem;
+}
+
+.hero-content h2 {
+  font-size: 2.8rem;
+  font-weight: normal;
+  margin-bottom: 1rem;
+  letter-spacing: 0.03em;
+}
+
+.hero-content p {
+  font-size: 1.15rem;
+  opacity: 0.85;
+  margin-bottom: 2rem;
+}
+
+/* ── Button ───────────────────────────────────────────────────── */
+.btn {
+  display: inline-block;
+  padding: 0.75rem 2rem;
+  background: #c8b98a;
+  color: #1a3a2a;
+  text-decoration: none;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 0.9rem;
+  font-weight: bold;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  border-radius: 2px;
+  transition: background 0.2s, color 0.2s;
+}
+
+.btn:hover {
+  background: #f0ebe0;
+  color: #1a3a2a;
+}
+
+/* ── Main sections ────────────────────────────────────────────── */
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+section {
+  padding: 4rem 0;
+  border-bottom: 1px solid #e0d8cc;
+}
+
+section:last-child { border-bottom: none; }
+
+section h2 {
+  font-size: 1.8rem;
+  font-weight: normal;
+  color: #1a3a2a;
+  margin-bottom: 1rem;
+  letter-spacing: 0.02em;
+}
+
+section p {
+  max-width: 680px;
+  font-size: 1.05rem;
+  color: #4a4a4a;
+  margin-bottom: 1.5rem;
+}
+
+/* ── Location ─────────────────────────────────────────────────── */
+.address {
+  font-style: italic;
+  color: #6a6a6a !important;
+  margin-bottom: 1.5rem;
+}
+
+.map-wrapper {
+  width: 100%;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+}
+
+.map-wrapper iframe {
+  display: block;
+  width: 100%;
+  height: 420px;
+  border: none;
+}
+
+/* ── Footer ───────────────────────────────────────────────────── */
+footer {
+  background: #1a3a2a;
+  color: #8aaa96;
+  text-align: center;
+  padding: 2rem;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 0.85rem;
+  letter-spacing: 0.04em;
+}
+
+/* ── Responsive ───────────────────────────────────────────────── */
+@media (max-width: 600px) {
+  .hero-content h2 { font-size: 2rem; }
+  .header-inner { flex-direction: column; height: auto; padding: 1rem 0; gap: 0.5rem; }
+  nav a { margin-left: 1rem; }
+}
