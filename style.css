@@ -15,7 +15,7 @@ header {
   position: sticky;
   top: 0;
   z-index: 100;
-  background: #1a3a2a;
+  background: #288dba;
   color: #f0ebe0;
   padding: 0 2rem;
   box-shadow: 0 2px 8px rgba(0,0,0,0.3);
@@ -51,7 +51,7 @@ nav a:hover { color: #f0ebe0; }
 
 /* ── Hero ─────────────────────────────────────────────────────── */
 #hero {
-  background: linear-gradient(135deg, #1a3a2a 0%, #2d5a3d 60%, #4a7c5e 100%);
+  background: linear-gradient(135deg, #288dba 0%, #AFD0E1FF 60%, #AFD0E1FF 100%);
   color: #f0ebe0;
   text-align: center;
   padding: 6rem 2rem;
@@ -143,8 +143,8 @@ section p {
 
 /* ── Footer ───────────────────────────────────────────────────── */
 footer {
-  background: #1a3a2a;
-  color: #8aaa96;
+  background: #288dba;
+  color: #f0ebe0;
   text-align: center;
   padding: 2rem;
   font-family: 'Helvetica Neue', Arial, sans-serif;
